@@ -12,8 +12,8 @@ function create_posttype() {
     register_post_type( 'wgd-locations',
         array(
             'labels' => array(
-                'name' => __( 'wgd-locations' ),
-                'singular_name' => __( 'wgd-location' ),
+                'name' => __( 'WGD Locations' ),
+                'singular_name' => __( 'WGD Location' ),
                 'add_new' => __('Add New Location'),
                 'edit_item'=> __('Edit Location'),
                 'search' => __('Search Locations'),
@@ -21,7 +21,7 @@ function create_posttype() {
             'menu_position'=>5,
             'public' => true,
             'exclude_from_search'=>true,
-            'has_archive' => false,
+            'has_archive' => true,
             'rewrite' => array('slug' => 'wgd-locations'),
             'supports' => array('title','editor','thumbnail'),
             'show_in_rest' => true,
